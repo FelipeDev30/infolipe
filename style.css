@@ -2,8 +2,8 @@
 :root {
     --primary-color: greenyellow;
     --hover-color: #ff5900;
-    --text-light: rgb(204, 248, 155);
-    --bg-dark: rgba(0, 0, 0, 0.178);
+    --text-light: rgb(255, 255, 255);
+    --bg-dark: rgba(0, 0, 0, 0.55);
 }
 
 * {
