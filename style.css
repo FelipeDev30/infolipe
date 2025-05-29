@@ -202,7 +202,7 @@ body {
 
 #services .service-list ul li {
     font-size: 1.2rem;
-    color: rgb(48, 39, 39);
+    color: rgb(113, 109, 109);
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -213,7 +213,7 @@ body {
 }
 
 #services .service-list ul li a {
-    color: rgb(48, 39, 39);
+    color: rgb(230, 226, 226);
     font-weight: bold;
     transition: color 0.3s ease;
 }
