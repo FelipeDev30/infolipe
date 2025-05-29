@@ -1,3 +1,11 @@
+
+:root {
+    --primary-color: greenyellow;
+    --hover-color: #ff5900;
+    --text-light: rgb(204, 248, 155);
+    --bg-dark: rgba(0, 0, 0, 0.178);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,12 +20,12 @@ html, body {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80');
+    background-image: url('assets/images/Fazer%20com%20que%20a%20pessoa%20na%20imagem%20esteja%20andando%20sobre%20um%20mundo%20de%20tecnologia.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .bg {
@@ -45,9 +53,12 @@ body {
     text-align: center;
     padding: 20px;
     color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.047);
-    background-color: rgba(0, 0, 0, 0.178);
+    background-color: var(--bg-dark);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.67);
 }
 
 .menu ul li {
@@ -55,7 +66,7 @@ body {
 }
 
 .menu ul li a {
-    color: white;
+    color: var(--primary-color);
     font-size: 1.2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
@@ -63,20 +74,20 @@ body {
 }
 
 .menu ul li a:hover {
-    color: #ff5900;
+    color: var(--hover-color);
 }
 
-.logo  img{
+.logo img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     display: flex;
-    margin: 0 auto;     
+    margin: 0 auto;
 }
 
 .logo {
-    background-color: rgba(0, 0, 0, 0.178);
+    background-color: var(--bg-dark);
     padding-top: 10px;
 }
 
@@ -96,7 +107,7 @@ body {
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.178);
+    background-color: var(--bg-dark);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.123);
 }
@@ -105,13 +116,18 @@ body {
     text-align: center;
     font-size: 2rem;
     color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.436);
     margin-bottom: 20px;
 }
 
 #home p {
     text-align: center;
     font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.671);
+    color: var(--text-light);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.436);
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -136,7 +152,6 @@ body {
     flex-direction: column;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.349);
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.123);
 }
@@ -145,20 +160,25 @@ body {
     text-align: center;
     font-size: 2rem;
     color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.436);
     margin-bottom: 20px;
 }
 
-#services p{
+#services p {
     text-align: center;
     font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.671);
+    color: var(--text-light);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.436);
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 #services article {
     width: 80%;
-    background-color: rgba(0, 0, 0, 0.178);
+    background-color: var(--bg-dark);
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
@@ -168,6 +188,9 @@ body {
 #services .service-list h4 {
     font-size: 1.5rem;
     color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.436);
     margin-bottom: 10px;
     text-align: center;
 }
@@ -188,6 +211,7 @@ body {
     content: "✔️";
     margin-right: 10px;
 }
+
 #services .service-list ul li a {
     color: rgb(48, 39, 39);
     font-weight: bold;
@@ -195,8 +219,9 @@ body {
 }
 
 #services .service-list ul li a:hover {
-    color: #ff5900;
+    color: var(--hover-color);
 }
+
 /* Contato */
 
 #contact {
@@ -221,7 +246,8 @@ body {
 #contact p {
     text-align: center;
     font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.671);
+    color: var(--text-light);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.436);
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -241,8 +267,9 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.123);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.123);
 }
+
 #contact form button[type="submit"] {
-    background-color: #ff5900;
+    background-color: var(--hover-color);
     color: rgba(255, 255, 255, 0.671);
     font-weight: bold;
     cursor: pointer;
@@ -257,17 +284,40 @@ body {
     background-color: #e04d00;
 }
 
-
-
-/*  */
+/* Rodapé */
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.178);
-    color: rgba(255, 255, 255, 0.671);
-    font-size: 1rem;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.436);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.123);
+    margin-top: 20px;
+    font-size: 1.1rem;
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+    }
+
+    #home img {
+        width: 80%;
+    }
+
+    #services article {
+        width: 100%;
+    }
+
+    #contact form {
+        width: 100%;
+    }
 }
